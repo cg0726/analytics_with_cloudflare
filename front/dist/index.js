@@ -4,15 +4,6 @@
     'welcome to WebViso/yestool，author：YesTool，author url: https://webviso.yestool.org'
   );
 
-  setTimeout(function () {
-    var addHeadStr = '<meta property="og:site_counter_author" content="yestool"></meta>'
-      + '<meta property="og:site_counter_author_url" content="https://webviso.yestool.org"></meta>';
-    
-    if (document.head){
-      document.head.innerHTML += addHeadStr;
-    }
-  }, 500);
-
   const script = document.currentScript;
   let dataBaseUrl = script.getAttribute('data-base-url');
   let dataPagePvId = script.getAttribute('data-page-pv-id');
